@@ -1,7 +1,7 @@
 web:
-  image: lmarsden/flask:v0.15
+  image: lmarsden/flask:v0.16
   links:
-   - redis
+   - "redis:redis"
   ports:
    - "80:80"
 redis:
